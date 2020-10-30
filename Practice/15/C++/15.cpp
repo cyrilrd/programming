@@ -1,48 +1,42 @@
 #include <iostream>
 #include <ctime>
-#include <cstdlib>
 #include <locale>
 using namespace std;
 
-int main() {
+int main()
+{
 	setlocale(LC_ALL, "Russian");
-
 	srand(time(NULL));
-	int guess;
-	int n;
-	bool want_to_play;
-	bool win;
 
-	cout << "Это программа, где вам надо угадать число, загаданное компьютером от 0 до 100 включительно.\nВам даётся 5 попыток." << endl;
-	cout << "Введите целое число." << endl;
+	int a, x, y;
+	bool w, r;
+	cout << "У вас есть 5 попыток угадать число от 0 до 100, удачи :)" << endl;
+
 	do {
-		want_to_play = false;
-		win = false;
-
-		n = rand() % 101;
-		for (int tries = 5; tries > 0; tries--) {
-			cin >> guess;
-
-			if (guess < n) {
-				cout << "Загаданное число больше" << endl;
+		r = false;
+		w = false;
+		y = rand() % 101;
+		for (int i = 0; i < 5; i++) {
+			cin >> a;
+			if (a < y) {
+				cout << "*Загаданное число больше:" << endl;
 			}
-			else if (guess > n) {
-				cout << "Загаданное число меньше" << endl;
+			else if (a > y) {
+				cout << "*Загаданное число меньше:" << endl;
 			}
 			else {
-				cout << "Поздравляю! Вы угадали" << endl;
-				win = true;
+				cout << "*Еху! Вы угадали! Было загадано:" << endl;
+				w = true;
 				break;
 			}
 		}
-		if (!win) {
-			cout << "Вы проиграли. Было загадано: " << n << endl;
+		if (w == false) {
+			cout << "*К сожалению, Вы проиграли. Было загадано:" << y << endl;
 		}
-
-		cout << "Хотите начать сначала? (1 - да)" << endl;
-		cin >> guess;
-		if (guess == 1) {
-			want_to_play = true;
+		cout << "*Хотите начать сначала? (1 - да!)" << endl;
+		cin >> x;
+		if (x == 1) {
+			cout << "У вас есть 5 попыток угадать число от 0 до 100, удачи :)" << endl;
 		}
-	} while (want_to_play);
+	} while (r);
 }

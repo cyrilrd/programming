@@ -1,15 +1,16 @@
 #include <iostream>
+#include <locale>
 using namespace std;
 
 int main()
 {
-setlocale(LC_ALL, "Russian");
-    setlocale(0, "");
-    int n, m;
+    setlocale(LC_ALL, "Russian");
+
+    int x;
     cout << "введите число: ";
-    cin >> n;
-    if (n == 1 || n % 2 == 0 && n / 2 != 0)
-        cout << "составное " << endl;
+    cin >> x;
+    if (x == 1 || x % 2 == 0 && x / 2 != 0)
+        cout << "составное" << endl;
     else
-        cout << "простое\n" << endl;
+        cout << "простое" << endl;
 }

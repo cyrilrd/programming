@@ -1,12 +1,13 @@
-print("Введите возводимое в степень число и целое число -- степень.")
+print("Введите возводимое в степень число:")
 a = float(input())
-n = int(input())
-result = 1.0
+print("Введите целое степенное цисло:")
+b = int(input())
+x = 1.0
 
-for i in range(abs(n)):
-    result *= a
+for i in range(abs(b)):
+    x *= a
 
-if n < 0:
-    result = 1 / result
+if b < 0:
+    x = 1 / x
 
-print(result)
+print(x)

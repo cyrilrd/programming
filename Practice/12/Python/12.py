@@ -1,9 +1,9 @@
-print("Введите число для расчёта факториала")
+print("Введите число:")
 
 a = int(input())
-result = 1
+x = 1
 
 for i in range(2, a + 1):
-    result *= i
+    x *= i
 
-print(result)
+print(x)

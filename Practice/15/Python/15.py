@@ -1,24 +1,24 @@
 import random
 
 while True:
-    secret = int(random.random() * 101)
+    x = int(random.random() * 101)
     win = False
 
-    print("Введите вашу догадку")
+    print("У вас есть 5 попыток угадать число от 0 до 100, удачи :)")
 
     for i in range(5):
-        guess = int(input())
-        if guess > secret:
-            print("Загаданное число меньше")
-        elif guess < secret:
-            print("Загаданное число больше")
+        a = int(input())
+        if a > x:
+            print("*Загаданное число меньше:")
+        elif a < x:
+            print("*Загаданное число больше:")
         else:
-            print("Вы выиграли!")
+            print("Еху! Вы выиграли! Было загадано:")
             win = True
             break
 
     if not win:
-        print("Вы проиграли. Загаданное число:", secret)
+        print("*Вы проиграли. Было загадано:", x)
 
-    if not 1 == int(input("Хотите начать сначала? (1 - да)\n")):
+    if not 1 == int(input("Хотите начать сначала? (1 - да!)")):
         break

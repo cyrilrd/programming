@@ -1,21 +1,24 @@
 #include <iostream>
+#include <locale>
 using namespace std;
+
 int main() {
     setlocale(LC_ALL, "Russian");
-
-    cout << "Введите возводимое в степень число и целое степенное число с новой строки" << endl;
-
     double a;
-    int n;
-    cin >> a >> n;
+    cout << "Введите возводимое в степень число:" << endl;
+    cin >> a;
+     
+    int b;
+    cout << "Введите целое степенное число:" << endl;
+    cin >> b;
 
-    double result = 1;
-    for (int i = 0; i < n; i++)
-        result *= a;
+    double x = 1;
+    for (int i = 0; i < b; i++)
+        x *= a;
 
-    if (n < 0) {
-        result = 1 / result;
+    if (b < 0) {
+        x = 1 / x;
     }
 
-    cout << result << endl;
+    cout << x << endl;
 }
