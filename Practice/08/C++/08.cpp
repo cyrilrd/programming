@@ -1,28 +1,24 @@
 #include <iostream>
 #include <cmath>
+#include <locale>
 using namespace std;
 
 int main()
 {
 	setlocale(LC_ALL, "Russian");
 
-	double a;
-	double b;
+	double a, b, x;
 	char c;
-	double x;
-	cout << "Через пробел введите вещественное число, затем оператор и вещественное число:\n";
-	cin >> a;
-	cin >> c;
-	cin >> b;
-
+	cout << "Через пробел введите вещественное число, затем оператор и вещественное число:" << endl;
+	cin >> a >> c >> b;
 	switch (c)
 	{
-	case '-':
-		x = (a - b);
-		break;
-
 	case '+':
 		x = (a + b);
+		break;
+
+	case '-':
+		x = (a - b);
 		break;
 
 	case '*':
@@ -32,13 +28,13 @@ int main()
 	case '/':
 		if (b == 0)
 		{
-			cout << "Делить на ноль нельзя";
+			cout << "Деление на ноль невозможно" << endl;
 			break;
 		}
 		x = (a / b);
 		break;
 	default:
-		cout << "Ошибка:\n В одной строке, через пробел вводятся:\n вещественное число \n оператор \n и вещественное число.\n";
+		cout << "В одной строке через пробел введите вещественное число, затем оператор и вещественное число" << endl;
 	}
 	cout << x;
 }

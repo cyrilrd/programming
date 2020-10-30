@@ -23,6 +23,8 @@ elif w == 2:
   x2, y2 = map(float, input().split())
   print ("Введите числа x3 и y3 через пробел")
   x3, y3 = map(float, input().split())
+  if (((x1 == x2) and (x1 == x3) and (x2 == x3)) or ((y1 == y2) and (y1 == y3) and (y2 == y3)) or ((y1 == y2) and (x1 == x2)) or ((y1 == y3) and (x1 == x3)) or ((y2 == y3) and (x2 == x3))):
+        print ("Такого треугольника не существует")
   sb = (((x1 - x3) * (y2 - y3)) - ((x2 - x3) * (y1 - y3))) / 2
   s = math.fabs(sb)
   print ("S = ", s)
