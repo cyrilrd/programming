@@ -20,9 +20,9 @@ int main()
 		cin >> c;
 		p = (a + b + c) / 2;
 		s = sqrt(p * (p - a) * (p - b) * (p - c));
-		cout << "S = " << s;
+		cout << "S = " << s << endl;
 	}
-
+	
 	if (w == 2)
 	{
 		cout << "Введите числа x1 и y1 через пробел" << endl;
@@ -34,6 +34,10 @@ int main()
 		sb = (((x1 - x3) * (y2 - y3)) - ((x2 - x3) * (y1 - y3))) / 2;
 		s = abs(sb);
 
-		cout << s << endl;
+		cout << "S = " << s << endl;
+	}
+	if (s == 0)
+	{
+		cout << "Такого треугольника не существует" << endl;
 	}
 }
