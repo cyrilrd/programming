@@ -5,16 +5,16 @@ int main()
 {
 setlocale(LC_ALL, "Russian");
 double a,b,c;
-cout << "Введите первое число ";
+cout << "Введите первое число: ";
 cin >> a;
-cout << "Введите второе число ";
+cout << "Введите второе число: ";
 cin >> b;
 c = a;
 a = b;
 b = c;
 	
-cout << "\n Первое число " << a;
-cout << "\n Второе число " << b;
+cout << "Первое число " << a << endl;
+cout << "Второе число " << b << endl;
 }
 
 
