@@ -1,6 +1,5 @@
 #include <iostream>
 #include<cmath>
-#include <locale>
 using namespace std;
 
 int main()
@@ -69,11 +68,6 @@ int main()
 
 		return 0;
 	}
-	if (metod != 1)
-		if (metod != 2)
-		{
-			cout << "JОшибка: веберите либо цифру  1, либо цифру 2. \n";
-		}
 	if (a + b < c || a + c < b || c + b < a)
 		cout << "Ошибка: данный треугольник не может существовать на плоскости." << endl;
 	else {

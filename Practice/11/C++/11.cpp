@@ -1,10 +1,9 @@
 #include <iostream>
-#include <locale>
 using namespace std;
 int main() {
     setlocale(LC_ALL, "Russian");
-    
-    cout << "Введите возводимое в степень число и целое степенное число, через пробел" << endl;
+
+    cout << "Введите возводимое в степень число и целое степенное число с новой строки" << endl;
 
     double a;
     int n;
