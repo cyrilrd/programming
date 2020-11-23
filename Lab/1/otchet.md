@@ -205,7 +205,7 @@ int main() {
 
 **3. Скриншот экрана с демонстрацией работы программы:**
 <figure class="sign">
-<img src= "./image/pic02.png" width="400" alt="Результат запроса">
+<img src= "./image/pic02.png" width="230" alt="Результат запроса">
 <figcaption><i><br/>Рис.1 Создание проекта</i></figcaption>
 </figure>
 <br/><br/>
