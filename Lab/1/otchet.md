@@ -59,7 +59,7 @@
 </figure>
 <br/><br/>
 
-**3. Код программы *"6labProj.cpp"*:**
+**3. Код программы *"serv.cpp"*:**
  
   ```C++
   #include <iostream>
