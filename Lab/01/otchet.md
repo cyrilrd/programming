@@ -55,7 +55,7 @@
 **2. Результат запроса в формате json:**
 <figure class="sign">
 <img src= "./image/pic01.png" width="300" alt="Результат запроса">
-<figcaption><i><br/>Рис.1 Создание проекта</i></figcaption>
+<figcaption><i><br/>Рис.1 Результат запроса</i></figcaption>
 </figure>
 <br/><br/>
 
