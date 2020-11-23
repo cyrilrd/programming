@@ -53,8 +53,11 @@
 **1. Мой ApiKey:** f789fb867d25f07a1fbeb8273bdd9f63<br/>
 
 **2. Результат запроса в формате json:**
- ![](.programming/Lab/1/image/pico1.png)
-  <br/><br/>
+<figure class="sign">
+<img src= ".1/image/pico1.png" width="400" alt="Результат запроса">
+<figcaption><i><br/>Рис.2 Создание проекта</i></figcaption>
+</figure>
+<br/><br/>
 
 **3. Код программы *"6labProj.cpp"*:**
  
