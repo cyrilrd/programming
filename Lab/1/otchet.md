@@ -54,8 +54,8 @@
 
 **2. Результат запроса в формате json:**
 <figure class="sign">
-<img src= ".1/image/pic01.png" width="400" alt="Результат запроса">
-<figcaption><i><br/>Рис.2 Создание проекта</i></figcaption>
+<img src= "./image/pic01.png" width="400" alt="Результат запроса">
+<figcaption><i><br/>Рис.1 Создание проекта</i></figcaption>
 </figure>
 <br/><br/>
 
@@ -205,10 +205,15 @@ int main() {
 
 **3. Скриншот экрана с демонстрацией работы программы:**
   <figure class="sign">
-  <img src= "./pic/2.png" width="1000" alt="Заполненный виджет">
-  <figcaption> <i><br/>Рис.2 Заполненный виджет </i></figcaption>
+  <img src= "./image/pic02.png" width="1000" alt="Заполненный виджет">
+  <figcaption> <i><br/>Рис.3 Заполненный виджет </i></figcaption>
   </figure>
   
+<br/><br/>
+ <figure class="sign">
+  <img src= "./image/pic03.png" width="1000" alt="Заполненный виджет">
+  <figcaption> <i><br/>Рис.4 Заполненный виджет </i></figcaption>
+  </figure>
 <br/><br/>
 
    **Вывод:** данная лабораторная работа стала хорошим опытом для изучения работы с передачей данных по сети. Я научился работать с библиотекой json, а также с локальным сервером компьютера.
